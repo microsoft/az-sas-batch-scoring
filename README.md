@@ -1,91 +1,64 @@
-[![Build Status](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_apis/build/status/AGCE%20AI/Happy%20Path%20Builds/ai-architecture-template?branchName=master)](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_build/latest?definitionId=170&branchName=master)
-TODO: Insert Build Badge Here
-### Authors: <>
-### Acknowledgements: <>
+---
+page_type: sample
+languages:
+- csharp
+products:
+- dotnet
+description: "Add 150 character max description"
+urlFragment: "update-this-to-unique-url-stub"
+---
 
-# AI Architecture Template
+# Official Microsoft Sample
 
-## Overview
-TODO: Insert Overview Here
+<!-- 
+Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
 
-## Design
-TODO: Insert Design Here
+Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
+
+Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
+-->
+
+Give a short description for your sample here. What does it do and why is it important?
+
+## Contents
+
+Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+
+| File/folder       | Description                                |
+|-------------------|--------------------------------------------|
+| `src`             | Sample source code.                        |
+| `.gitignore`      | Define what to ignore at commit time.      |
+| `CHANGELOG.md`    | List of changes to the sample.             |
+| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
+| `README.md`       | This README file.                          |
+| `LICENSE`         | The license for the sample.                |
 
 ## Prerequisites
-1. [Anaconda Python](https://www.anaconda.com/download)
-1. [Docker](https://docs.docker.com/v17.12/install/linux/docker-ee/ubuntu) installed.
-1. [Azure account](https://azure.microsoft.com).
 
----
-**NOTE**
-You will need to be able to run docker commands without sudo to run this tutorial. Use the following commands to do this.
-
-```bash
-sudo usermod -aG docker $USER
-newgrp docker
-``` 
----
-
-The tutorial was developed on an [Azure Ubuntu
-DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-ubuntu-intro),
-which addresses the first three prerequisites.
+Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
 
 ## Setup
 
-To set up your environment to run these notebooks, please follow these steps.  They setup the notebooks to use Azure seamlessly.
+Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
 
-1. Fork this repo into your own Github Namespace or import this repo into Azure DevOps.
-1. Copy `sample_workspace_conf.yml` to a new file, `workspace_conf.yml`, and fill in each field. This will keep secrets out of the source code, and this file will be ignored by git.
-1. Clone your repository locally, or on an Azure Data Science Virtual Machine.
-   ```
-   git clone https://github.com/[your_github_username]/ai-architecture-template.git
-   ```
-1. Enter the local repository:
-   ```
-   cd ai-architecture-template
-   ```
-1. Create the Python ai-architecture-template virtual environment using the environment.yml:
-   ```
-   conda env create -f environment.yml
-   ```
-1. Activate the virtual environment:
-   ```
-   source activate ai-architecture-template
-   ```
-   The remaining steps should be done in this virtual environment.
-1. Login to Azure:
-   ```
-   az login
-   ```
-   You can verify that you are logged in to your subscription by executing
-   the command:
-   ```
-   az account show -o table
-   ```
-1. If you have more than one Azure subscription, select it:
-   ```
-   az account set --subscription <Your Azure Subscription>
-   ```
-1. Start the Jupyter notebook server:
-	```
-	jupyter notebook
-	
-You may also use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions provided within the pipeline.
+## Running the sample
 
-# Contributing
+Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+
+## Key concepts
+
+Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+## Contributing
+
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repositories using our CLA.
+When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-
-# Related projects
-
-[Microsoft AI Github](https://github.com/microsoft/ai) Find other Best Practice projects, and Azure AI Designed patterns in our central repository. 
