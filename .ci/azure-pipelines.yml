@@ -40,9 +40,9 @@ stages:
 - template: .ci/stages/deploy_notebooks_stages_v2.yml@aitemplates
   parameters:
     Agent: $(Agent_Name)
-    jobDisplayName: ai-architecture-template #TODO: Update with project name
+    jobDisplayName: az-sas-batch-scoring
     DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)
-    workload_vars: ../vars/ai-architecture-template.yml #TODO: Update with project name
+    workload_vars: ../vars/az-sas-batch-scoring.yml
     flighting_release: false
     flighting_preview: false
     flighting_master: false
